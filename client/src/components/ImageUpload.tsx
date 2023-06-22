@@ -23,7 +23,7 @@ const ImageUpload = () => {
   };
 
   const uploadImage = () => {
-    fetch("http://localhost:8080/file/upload", {
+    fetch("https://api-deployment-tau.vercel.app/file/upload", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const ImageUpload = () => {
   };
 
   const getImage = () => {
-    fetch("http://localhost:8080/file", {
+    fetch("https://api-deployment-tau.vercel.app/file", {
       method: "GET",
     })
       .then((res) => res.json())
